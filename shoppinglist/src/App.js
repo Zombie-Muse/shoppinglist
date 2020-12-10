@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+
+function handleClick() {
+  console.log("Oooooohhh...Click me again daddy.")
+}
+
+function handleMouseOver() {
+  <img src="https://www.fillmurray.com/300/300" alt="bill"/>
+  console.log("That tickles...tehehe")
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. Help me. I am going insane...
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <img src="https://www.fillmurray.com/200/100" alt="bill" onMouseOver={handleMouseOver}/>
+      <br />
+      <br />
+      <button onClick={handleClick}>Click Me Motherfucker!!!</button>
     </div>
-  );
+  )
 }
 
 export default App;
